@@ -540,7 +540,7 @@ void MakePhylo(void)
 
 }
 
-shift MakeChange(char brownian[11])
+shift MakeChange(char brownian[*])
 {
   //char brownian[11] = "7000400200";
   int x, y, z;

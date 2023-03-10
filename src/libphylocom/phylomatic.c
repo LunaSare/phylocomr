@@ -295,7 +295,7 @@ int main(int argc, char *argv[])
   return 1;
 }
 
-struct taxa ReadTaxa(char filename[100])
+struct taxa ReadTaxa(char filename[*])
 {
   FILE *taxafile;
   char line[1000];

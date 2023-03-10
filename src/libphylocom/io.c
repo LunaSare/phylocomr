@@ -126,7 +126,7 @@ void NAF(phylo P[], sample S, traits T)
 
 // ---------- READ MEANS -----------------------------------------------------
 
-means ReadMeans(phylo Intree, char meansfile[50])
+means ReadMeans(phylo Intree, char meansfile[*])
 {
 
   char line[500];
@@ -594,7 +594,7 @@ void PrintWelcome(void)
 //}
 
 // ---------------- ReadSample ---------------------------
-sample ReadSample(char samplefile[50])
+sample ReadSample(char samplefile[*])
 {
   struct sample InSample;
 
@@ -764,7 +764,7 @@ sample ReadSample(char samplefile[50])
 }
 
 // ----------- ReadTraits -------------
-traits ReadTraits(char traitfile[50])
+traits ReadTraits(char traitfile[*])
 {
   struct traits C;
   FILE *Cread;
@@ -932,7 +932,7 @@ traits ReadTraits(char traitfile[50])
 
 
 // --------------- ReadPhylogeny -----------------------
-phylo ReadPhylogeny(char PhyloFile[50])
+phylo ReadPhylogeny(char PhyloFile[*])
 {
 
   //Read the phylogeny in Newick format
