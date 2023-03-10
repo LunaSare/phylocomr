@@ -262,7 +262,7 @@ struct phylo New2fy(char *);
 void Fy2new(phylo);
 struct sample ReadSample(char *);
 struct phylo ReadPhylogeny(char *);
-struct means ReadMeans(phylo, char *);
+struct means ReadMeans(phylo, char[50]);
 void AttachSampleToPhylo(sample, phylo, int *);
 void AttachSampleToTraits(sample, traits, int *);
 void AttachTraitsToPhylo(traits, phylo, int *);
